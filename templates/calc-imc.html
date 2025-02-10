@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<div class="container">
+    <form action="/resultado" method="GET">
+        <label for="">Informe seu nome:</label>
+        <input name="nome" type="text">
+        <br>
+        <label for="">Informe seu peso:</label>
+        <input name="peso" type="text">
+        <br>
+        <label for="">Informe sua altura:</label>
+        <input name="altura" type="text">
+        <br>
+        <button type="submit">Calcular IMC</button>
+    </form>
+</div>
+{% endblock %}
